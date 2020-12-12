@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Accesorios 3H</title>
-    <link rel="shortcut icon" href="logoAzul.png">
+    <link rel="shortcut icon" href="../html/Images/logoAzul.png">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scripts.js"></script>
 </head>
 
 <header>
     <ul>
-      <img src="images/logoAzul.png" alt="logoMarca">
-      <div><input type="text" placeholder="Buscar producto...">
-      <img src="images/lupa.png" alt="buscar"></div>
+      <img src="images/logoAzul.png" alt="logoMarca" onclick="regresar_inicio()">
+      <div><input type="search" id="nombre_articulo" placeholder="Buscar producto..." onsearch="buscar_articulo()">
+      <img src="images/lupa.png" alt="buscar" onclick="buscar_articulo()"></div>
       <img src="images/logoUsuario.png" alt="logoUsuario">
     </ul>
+    <p id="demo">javascript</p>
 </header>
 
 <body class="principal">
@@ -33,7 +35,6 @@
       <p>Descripcion del articulo</p>
     </div>
 </div>
-  
 </section>  
 </body>
 
