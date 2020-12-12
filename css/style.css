@@ -1,0 +1,128 @@
+/* ------------------------------------------------------header---------------------------------------------------------------- */
+
+header {
+    background-color:#000000;
+    height: 80px;
+    width: 100%;
+}
+header img {
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin-right: 40px;
+}
+header div {
+    display: flex;
+    width: 50%;
+    height: 25px;
+    margin: auto;
+    
+}
+header ul div img {
+    height: 100%;
+    width: auto;
+    background-color: white;
+}
+header div input {
+    width: 80% ;
+    height: 83%;
+}
+header ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* ---------------------------------------------------------body  general ------------------------------------------------------------------------ */
+
+body section {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    background-color:white;
+}
+
+/* ---------------------------------------------------------body  1.Principal -------------------------------------------------------------------- */
+
+.principal section h1{
+    background-color: #86b4ca;
+    text-align: center;
+}
+.principal section {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.principal section div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.principal section div div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    margin: 2%;
+    background-color: #86b4ca;
+    align-items: center;
+}
+.principal section div div h2, body section div div p {
+    color: black;
+}
+.principal section div div img {
+    display: flex;
+    width: 90%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------body  2.Logueo ----------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------body  3.Resultado-busqueda ----------------------------------------------------------- */
+
+/* ---------------------------------------------------------body  4.Registrar-usuario ------------------------------------------------------------ */
+
+/* ---------------------------------------------------------body  5.Recuperar-contraseña --------------------------------------------------------- */
+
+/* ---------------------------------------------------------body  6.Agregar-producto ------------------------------------------------------------- */
+
+/* ---------------------------------------------------------body  7.Actualizar ------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------footer------------------------------------------------------------------------- */
+
+footer div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+footer div ul {
+    display: flex;
+    justify-content:space-evenly;
+}
+footer div hr {
+    color: black;
+    width: 65%;
+}
+#firma {
+    text-align: center;
+    color: white;
+}
+
+/* ----------------------------------------------------------general-------------------------------------------------------------------- */
+
+
+h2, p {
+    font-size: 0.9vw;
+    color: white;
+}
+hr {
+    color: white;
+}
+html {
+    background-color: #405661;
+}
+h1{
+    font-size: 1.5vw;
+}
