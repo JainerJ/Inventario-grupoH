@@ -3,19 +3,31 @@
 <head>
     <meta charset = "utf-8">
     <title> Agregar producto</title>
- </head>
- 
- <body>
+    <link rel="shortcut icon" href="../html/Images/logoAzul.png">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scripts.js"></script>
+ </head>
+
+ <header>
+    <ul>
+      <img src="images/logoAzul.png" alt="logoMarca" onclick="regresar_inicio()">
+      <div><input type="search" id="nombre_articulo" placeholder="Buscar producto..." onsearch="buscar_articulo()">
+      <img src="images/lupa.png" alt="buscar" onclick="buscar_articulo()"></div>
+      <img src="images/logoUsuario.png" alt="logoUsuario">
+    </ul>
+    <p id="demo">javascript</p>
+</header>
+ 
+ <body class ="Agregarproducto">
+    <section>
+    <div>
     <h1>Agregar Producto</h1>
-    <hr>
-    <form action = "#">
-        <fieldset>
-            <legend>Información del Producto</legend>
-            <div>
-                <p>Imagen del Producto</p> 
-                <input type = "Image" name ="op1"/><br>
-                <br>
+    <label for = "Imagen del producto">Imagen del Producto</label> <br>
+    <input  type = "Image" name ="op1"/><br>
+    </div>
+
+    
+    <form action = "#">          
                 <label for = "Nombre del producto">Nombre del Producto</label> 
                 <input type = "text" placeholder ="Nombre"/><br>
                  <br>
@@ -28,13 +40,24 @@
                  <label for = "Cantidad">Cantidad</label> 
                  <input type = "text" placeholder ="Unidades disponibles"/><br>
                  <br>
-                 <input type = "submit" name = "Submit" value ="Agregar producto"/>
-        </div>    
+                 <input type = "submit" class = "btn-agregar" value ="Agregar producto"/>
+    </form> 
+    </section>
 </body>  
 
 
  <footer>
-
+    <div>
+        <hr>
+        <ul>
+          <p>Horario de atención<br><br>Lunes a viernes de 8 am a 6 pm<br>
+          Sabados de 8 am a 12 pm</p>
+          <p>Telefonos<br><br>3205555555<br>
+          0325555555</p>
+        </ul>
+        <hr>
+        <h2 id="firma">Grupo 3 subgrupo H - universidad del Norte, 2020</h2>
+      </div>
  </footer>
 
  </html>

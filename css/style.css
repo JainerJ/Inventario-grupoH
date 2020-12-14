@@ -112,6 +112,35 @@ body section {
 
 /* ---------------------------------------------------------body  6.Agregar-producto ------------------------------------------------------------- */
 
+
+
+.Agregarproducto section h1{
+    background-color: #86b4ca;
+    text-align: center;
+    line-height: auto;
+    font-style:normal;
+
+}
+
+.Agregarproducto section {
+
+    background-color:whitesmoke;
+    border-radius: 3 px;
+    color: #303233;
+    font-style:normal;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 15px;
+    width:600px;
+    
+    
+}
+
+.btn-agregar{
+    background-color:#051221;
+    color:white;
+    font-style:normal;
+}
 /* ---------------------------------------------------------body  7.Actualizar ------------------------------------------------------------------- */
 
 
