@@ -17,7 +17,7 @@ header div {
     width: 50%;
     height: 25px;
     margin: auto;
-    
+
 }
 header ul div img {
     height: 100%;
@@ -70,7 +70,8 @@ body section {
     opacity: 0;
     animation: mymove 12s infinite;
 }
-  
+
+
   @keyframes mymove{
     0% {transform: translatex(400px); opacity: 0; height: 60vh;}
     10% {transform: translatex(0px); opacity: 1; height: 75vh;}
@@ -78,7 +79,7 @@ body section {
     35% {transform: translatex(-400px); opacity: 0; height: 60vh;}
     100% {transform: translatex(-400px); opacity: 0; height: 20vh;}
   }
-  
+
   .principal div:nth-child(2){
     animation-delay: 3s;
   }
@@ -100,11 +101,168 @@ body section {
     width: 90%;
     height: auto;
 }
-
+.principal h1{
+  color: #fff;
+  text-align: center;
+}
 
 /* ---------------------------------------------------------body  2.Logueo ----------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------body  3.Resultado-busqueda ----------------------------------------------------------- */
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #E84C3D;
+
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.category_list .ct_item-active{
+	background: #2D3E50;
+}
+
+/* PRODUCTOS ============*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+.products-list .product-item img{
+	width: 100%;
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #2D3E50;
+
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products-list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list .category_item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products-list .product-item{
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list .product-item{
+		width: 47.5%;
+	}
+
+	.products-list .product-item:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list .product-item:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
 
 /* ---------------------------------------------------------body  4.Registrar-usuario ------------------------------------------------------------ */
 
@@ -112,35 +270,6 @@ body section {
 
 /* ---------------------------------------------------------body  6.Agregar-producto ------------------------------------------------------------- */
 
-
-
-.Agregarproducto section h1{
-    background-color: #86b4ca;
-    text-align: center;
-    line-height: auto;
-    font-style:normal;
-
-}
-
-.Agregarproducto section {
-
-    background-color:whitesmoke;
-    border-radius: 3 px;
-    color: #303233;
-    font-style:normal;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 15px;
-    width:600px;
-    
-    
-}
-
-.btn-agregar{
-    background-color:#051221;
-    color:white;
-    font-style:normal;
-}
 /* ---------------------------------------------------------body  7.Actualizar ------------------------------------------------------------------- */
 
 
