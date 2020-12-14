@@ -7,7 +7,6 @@ function buscar_articulo (){
         }
     }
     if(nombre_articulo.value!="" && comprobador >=1){
-        document.getElementById("demo").innerHTML = "Estas buscando: " + nombre_articulo.value;
         location.href = "contenido.html";
     }
     else{
@@ -17,4 +16,8 @@ function buscar_articulo (){
 
 function regresar_inicio(){
     location.href = "index.html";
+}
+
+function ir_registro(){
+    location.href = "registro.html"
 }
